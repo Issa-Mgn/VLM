@@ -1,0 +1,211 @@
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient( #93c5fd);
+    text-align: center;
+    }
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    background-color: #1e3a8a;
+    border-radius: 10px;
+   }
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+   } 
+   .pages1 {
+    display: flex;
+    gap: 20px;
+   } 
+   .pages-item img {
+    width: 100%; /* Les images prennent toute la largeur de leur conteneur */
+    height: auto; /* Maintient les proportions */
+    object-fit: contain; /* Affiche tout le contenu de l'image */
+    border-radius: 10px; /* Coins arrondis pour un meilleur rendu */
+  }
+   
+  .pages2{
+    display: flex;
+    gap:20px;
+    }
+
+  .pages3{
+    display: flex;
+    gap:20px;
+  }
+  button {
+    padding: 12px;
+    background-color: rgb(55, 55, 216);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: rgb(9, 9, 124);
+  }
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  h2{
+    text-align: center;
+  }
+  .search-wrapper {
+      display: flex;
+    }
+
+    .search-box {
+      background: linear-gradient(to bottom right, #cbeafe, #93c5fd);
+      padding: 10px 20px;
+      border-radius: 20px;
+      display: flex;
+      width: 250px;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .search-box input{ 
+      border: none;
+      background: transparent;
+      outline: none;
+      padding: 8px;
+      font-size: 16px;
+      color: #333;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid none;
+      border-radius: 5px;
+    }
+
+    .search-box i {
+      cursor: pointer;
+      color: white;
+      margin-left: 15px;
+      margin-top: 15px;
+      visibility: visible;
+      opacity: 1;
+      display: inline-block;
+    }
+
+  .message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .catégorie {
+    display: flex;
+    width: 400px;
+    margin-left: auto;
+    position: relative;
+    top: -60px;
+  }
+  .catégorie select {
+    background-color:#1e3a8a;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+  }
+  span{
+    color: rgb(55, 55, 216);
+  } 
+  /* ...existing code... */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+    .catégorie {
+      flex-direction: column; /* Les éléments passent en colonne */
+      align-items: center; /* Centre les éléments */
+      gap: 15px; /* Augmente l'espacement entre les éléments */
+      padding: 10px;
+    }
+  
+    .catégorie select {
+      width: 90%; /* Le sélecteur prend presque toute la largeur */
+    }
+  .pages1, .pages2, .pages3 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pages-item {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    padding: 0;
+  }
+    .catégorie {
+      flex-direction: column; /* Les éléments restent en colonne */
+      align-items: center; /* Centre les éléments */
+      gap: 10px; /* Réduit l'espacement entre les éléments */
+      padding: 5px;
+    }
+  
+    .catégorie select {
+      width: 100%; /* Le sélecteur prend toute la largeur */
+      padding: 8px; /* Réduit le padding pour les petits écrans */
+      font-size: 14px; /* Réduit la taille de la police */
+    }
+  .pages-item {
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .search-box {
+    padding: 5px;
+  }
+
+  .search-box input {
+    font-size: 12px;
+  }
+  
+ .catégorie {
+  flex-direction: column;
+    padding: 10px;
+    top: 0;
+    position: relative;
+ }
+}

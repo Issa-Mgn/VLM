@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visite Le Monde</title>
+  <link rel="stylesheet" href="./Assets/style.css" />
+  <!-- Ajoute Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <h1 style="text-align: center; color:rgb(55, 55, 216 ) ;">Visite Le Monde</h1>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="./index.html">Accueil</a></li>
+              <li><a href="./Assets/Pages.html">Pages</a></li>
+              <li><a href="./Assets/Contact.html">Contactez-nous</a></li>
+              <li><a href="./Assets/À propos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+     <div class="container">
+         <div class="text-section">
+             <h1>Visite Le Monde</h1>
+                 <p>Bienvenue sur VisiteLeMonde (VLM) ! Ici, chaque destination devient une aventure et chaque voyage une expérience inoubliable. Que vous soyez un explorateur passionné ou un voyageur curieux, nous sommes là pour vous accompagner vers des paysages époustouflants, des cultures fascinantes et des souvenirs mémorables. Préparez-vous à découvrir le monde sous un nouveau regard… Bon voyage !</p>
+                 <button><a href="./Assets/Pages.html">Apprendre encore plus</a></button>
+         </div>
+         <div class="carousel-section" id="carousel-1">
+          <div class="image-wrapper">
+            <img src="./Assets/Img/WhatsApp Image 2025-05-23 à 16.42.01_83401a08.jpg" class="active" alt="Porto-Novo" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-23 à 15.49.48_b2458220.jpg" alt="Colisée" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-23 à 17.30.24_b1a84ff5.jpg" alt="Vatican" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-25 à 00.59.31_9726b55f.jpg" alt="Pyramide de Gizeh" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-25 à 01.44.54_b9c44fa9.jpg"  alt="Sphinx" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-25 à 01.47.47_cf21e54c.jpg" alt="Musée Egyptien" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-25 à 01.50.17_e713dc26.jpg"  alt="Istanbul" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-25 à 01.52.55_de9872f5.jpg"  alt="Turquie" />
+            <img src="./Assets/Img/WhatsApp Image 2025-05-25 à 01.55.00_763068d8.jpg"  alt="Pérou" />
+            <!-- ... autres images ... -->
+          </div>
+          <div class="controls">
+            <button onclick="prevImage('carousel-1')" aria-label="Image précédente">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button onclick="nextImage('carousel-1')" aria-label="Image suivante">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="label" id="category-label-1">Porto-Novo</div>
+         </div>
+        
+         <div class="carousel-section" id="carousel-2">
+          <div class="image-wrapper">
+            <img src="./Assets/Img/IMG-20250525-WA0043.jpg" class="active" alt="Tokyo" />
+            <img src="./Assets/Img/IMG-20250525-WA0042.jpg" alt="Maldives" />
+            <img src="./Assets/Img/IMG-20250525-WA0035.jpg" alt="Kyoto" />
+            <img src="./Assets/Img/IMG-20250525-WA0036.jpg" alt="Seychelles" />
+            <img src="./Assets/Img/IMG-20250525-WA0037.jpg"  alt="Costa-Rica" />
+            <img src="./Assets/Img/IMG-20250525-WA0038.jpg" alt="Londres" />
+            <img src="./Assets/Img/IMG-20250525-WA0039.jpg"  alt="New York City" />
+            <img src="./Assets/Img/IMG-20250525-WA0040.jpg"  alt="Dubaï" />
+            <img src="./Assets/Img/IMG-20250525-WA0041.jpg"  alt="Bangkok" />
+            <!-- ... autres images ... -->
+          </div>
+          <div class="controls">
+            <button onclick="prevImage('carousel-2')" aria-label="Image précédente">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button onclick="nextImage('carousel-2')" aria-label="Image suivante">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="label" id="category-label-2">Tokyo</div>
+         </div>
+
+     </div>
+
+    <a href="./Assets/Développeur.html"><div class="ring">
+      <span>VLM prod</span>
+    </div></a>
+    <div class="icons-fixed">
+      <a href="https://wa.me/qr/HCXEIDFUH7I3B1"><img src="./Assets/Img/bf8a76719f900b8757154eb3cfbc844a.jpg" alt="img1"></a>
+      <a href="https://www.instagram.com/issamigan?igsh=YzljYTk10Dg3Zg=="><img src="./Assets/Img/12d752c2919daaf807d8b71f3dbed1a0.jpg" alt="img2"></a>
+      <a href="https://www.facebook.com/profile.php?id=100086556513526"><img src="./Assets/Img/3a358df023050199d97d4ee04ca27f00.jpg" alt="img3"></a>
+      <a href="https://www.linkedin.com/in/issa-migan-520051362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./Assets/Img/32dbd38843d4e565744c95bfdf47f56d.jpg" alt="img4"></a>
+    </div>
+    <footer>
+      <p>&copy; Tous les droits réservés ! <span>VLM</span> 2025.</p>
+    </footer>
+    <br>
+    <script src="./Assets/sript.js"></script>    
+</body>
+</html>

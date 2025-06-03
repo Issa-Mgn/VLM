@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développeur</title>
+</head>
+<body>
+    <abbr title="VLM"><h1 style="text-align: center; color:rgb(55, 55, 216 ) ;">Visite Le Monde</h1></abbr>
+    <header>
+        <nav>
+          <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="./Pages.html">Pages</a></li>
+              <li><a href="./Contact.html">Contactez-nous</a></li>
+              <li><a href="./À propos.html">À propos</a></li>
+          </ul>
+        </nav>
+    </header>
+    <img class="tof" src="Img/WhatsApp Image 2025-05-04 à 17.01.30_77687495.jpg" alt="Développeur du site Web VisiteLeMonde (VLM) .">
+    <h3>Issa MIGAN</h3>
+    <p>Développeur du site Web VisiteLeMonde (VLM).</p>
+    <div class="icons-fixed">
+        <a href="https://wa.me/qr/HCXEIDFUH7I3B1"><i class="fab  fa-whatsapp"><img src="Img/bf8a76719f900b8757154eb3cfbc844a.jpg" alt="img1"></i></a>
+        <a href="https://www.instagram.com/issamigan?igsh=YzljYTk10Dg3Zg=="><i class="fab fa-instagram"><img src="Img/12d752c2919daaf807d8b71f3dbed1a0.jpg" alt="img2"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100086556513526"><i class="fab fa-facebook"><img src="Img/3a358df023050199d97d4ee04ca27f00.jpg" alt="img3"></i></a>
+        <a href="https://www.linkedin.com/in/issa-migan-520051362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedIn"><img src="Img/32dbd38843d4e565744c95bfdf47f56d.jpg" alt="img4"></i></a>
+      </div>
+      <a href="./Développeur.html"><div class="ring">
+        <span>VLM prod</span>
+      </div></a>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient( #93c5fd);
+    display: grid;
+    text-align: center;
+  }
+  abbr {
+    text-decoration: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    background-color: #1e3a8a;
+    border-radius: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  .tof{
+   display: block;
+   margin: 0 auto;
+   max-width: auto;
+    
+  }
+  .icons-fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: line;
+    gap: 1px;
+    z-index: 1000;
+  }
+  .icons-fixed a {
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s;
+  }
+  .icons-fixed img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .ring {
+  margin: 10px;
+  background: linear-gradient(to bottom right, #cbeafe, #93c5fd) ;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: 5px solid none;
+  box-shadow: 0 0 25px #93c5fd, 0 0 60px #010a16;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: spin 5s linear infinite;
+ }
+ .ring::before {
+  border: 2px dashed #93c5fd;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: pulse 3s ease-in-out infinite;
+ }
+ .ring span {
+  color: black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #93c5fd;
+ }
+ @keyframes spin {
+  0% { transform: rotate(0deg);}
+  100%{ transform: rotate(360deg);}
+ }
+ @keyframes pulse {
+  0%,100% { transform: scale(1);opacity: 0.2;}
+  50% {transform: scale(1.1); opacity: 0.4;}
+ }
+ span{
+    color: rgb(55, 55, 216 );
+ }
+ /* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Les éléments du menu passent en colonne */
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .tof {
+    width: 90%; /* L'image prend 90% de la largeur de l'écran */
+    height: auto; /* Ajuste automatiquement la hauteur */
+  }
+
+  .icons-fixed {
+    flex-direction: column; /* Les icônes passent en colonne */
+    gap: 10px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    padding: 0;
+  }
+
+  .tof {
+    width: 100%; /* L'image prend toute la largeur */
+  }
+
+  .icons-fixed img {
+    width: 30px; /* Réduit la taille des icônes */
+    height: 30px;
+  }
+
+  footer p {
+    font-size: 12px; /* Réduit la taille du texte dans le footer */
+  }
+}
+    </style>
+    <br>
+<footer>
+    <p>&copy; Tous les droits réservés ! <span>VLM</span> 2025.</p>
+</footer>
+<br>
+</body>
+</html>

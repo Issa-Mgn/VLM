@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(#93c5fd);
+  display: grid;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */ 
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+    background-color: #1e3a8a;
+    border-radius: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  } 
+  abbr {
+    text-decoration: none;
+  }
+  #Colisée {
+    gap: 20px; /* Ajoute un espacement entre les éléments */
+  }
+  .image {
+    display: grid; /* Utilisation de CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colonnes adaptatives */
+    gap: 15px; /* Espacement entre les images */
+    width: 100%; /* Prend toute la largeur disponible */
+    margin: 0 auto; /* Centre le conteneur */
+  }
+  
+  .image img {
+    max-width: 100%; /* Les images ne dépassent pas leur conteneur */
+    height: auto; /* Maintient les proportions */
+    border-radius: 10px; /* Coins arrondis */
+  }
+  .slide {
+    width: auto;
+  }
+  .text-contain {
+    display: grid;
+    text-align: justify;
+  }
+  .btn{
+    background: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  footer {
+    text-align: center;
+  }
+  span{
+    color: rgb(55, 55, 216);
+  } 
+  /* Pour les écrans moyens (tablettes) */
+@media (max-width: 768px) {
+  .slider-container {
+    width: 90%; /* Réduit la largeur pour les écrans moyens */
+  }
+
+  .image {
+    flex-direction: column; /* Les images passent en colonne */
+    gap: 15px; /* Ajoute un espacement entre les images */
+  }
+
+  .btn {
+    font-size: 14px; /* Réduit la taille des boutons */
+    padding: 8px 12px;
+  }
+}
+
+/* Pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+  .image {
+    display: flex; /* Utilisation de Flexbox pour aligner les images horizontalement */
+    flex-direction: row; /* Les images sont alignées en ligne */
+    overflow-x: auto; /* Active le défilement horizontal */
+    scroll-snap-type: x mandatory; /* Active le snap pour un défilement fluide */
+    gap: 10px; /* Ajoute un espacement entre les images */
+    padding: 10px; /* Ajoute un padding pour un meilleur rendu */
+  }
+
+  .image img {
+    flex-shrink: 0; /* Empêche les images de se réduire */
+    width: auto; /* Ajuste la largeur automatiquement */
+    height: 200px; /* Ajuste la hauteur selon vos besoins */
+    scroll-snap-align: start; /* Aligne chaque image au début lors du défilement */
+    border-radius: 10px; /* Ajoute des coins arrondis aux images */
+  }
+  nav ul {
+    flex-direction: column; /* Les éléments du menu passent en colonne */
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .btn {
+    font-size: 12px; /* Réduit encore la taille des boutons */
+    padding: 6px 10px;
+  }
+}
+/* Pour les écrans moyens (tablettes) */
+@media (max-width: 768px) {
+  .image {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Réduit la taille des colonnes */
+    gap: 10px; /* Réduit l'espacement entre les images */
+  }
+}
